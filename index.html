@@ -7,182 +7,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funda</title>
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
     
 </head>
 <body>
     <header>
-        <div>
-            <button>
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <img src="./assets/logo.png" alt="funda logo" class="logo">
-            
+        <div class="header-container">
+            <div>
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- <img src="./assets/logo.png" alt="funda logo" class="logo"> -->
+                
+            </div>
+            <nav>
+    
+                <a href="login.php">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M16.1111 3C19.6333 3 22 6.3525 22 9.48C22 15.8138 12.1778 21 12 21C11.8222 21 2 15.8138 2 9.48C2 6.3525 4.36667 3 7.88889 3C9.91111 3 11.2333 4.02375 12 4.92375C12.7667 4.02375 14.0889 3 16.1111 3Z" fill="#F03C30" stroke="#F03C30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>
+                        Bewaarde huizen
+                    </span>
+                </a>
+                <a href="login.php">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 4.5C12.7911 4.5 13.5645 4.7346 14.2223 5.17412C14.8801 5.61365 15.3928 6.23836 15.6955 6.96927C15.9983 7.70017 16.0775 8.50444 15.9231 9.28036C15.7688 10.0563 15.3878 10.769 14.8284 11.3284C14.269 11.8878 13.5563 12.2688 12.7804 12.4231C12.0044 12.5775 11.2002 12.4983 10.4693 12.1955C9.73836 11.8928 9.11365 11.3801 8.67412 10.7223C8.23459 10.0645 8 9.29113 8 8.5C8 7.43913 8.42142 6.42172 9.17157 5.67157C9.92172 4.92143 10.9391 4.5 12 4.5ZM12 11C12.4945 11 12.9778 10.8534 13.3889 10.5787C13.8 10.304 14.1205 9.91352 14.3097 9.45671C14.4989 8.99989 14.5484 8.49723 14.452 8.01227C14.3555 7.52732 14.1174 7.08186 13.7678 6.73223C13.4181 6.3826 12.9727 6.1445 12.4877 6.04804C12.0028 5.95157 11.5001 6.00108 11.0433 6.1903C10.5865 6.37952 10.196 6.69995 9.92132 7.11107C9.64662 7.5222 9.5 8.00555 9.5 8.5C9.5 9.16304 9.76339 9.79893 10.2322 10.2678C10.7011 10.7366 11.337 11 12 11Z" fill="white"/>
+                        <path d="M12 1.5C14.0767 1.5 16.1068 2.11581 17.8335 3.26957C19.5602 4.42332 20.906 6.0632 21.7007 7.98182C22.4955 9.90045 22.7034 12.0116 22.2982 14.0484C21.8931 16.0852 20.8931 17.9562 19.4246 19.4246C17.9562 20.8931 16.0852 21.8931 14.0484 22.2982C12.0116 22.7034 9.90044 22.4955 7.98182 21.7007C6.0632 20.906 4.42332 19.5602 3.26957 17.8335C2.11581 16.1068 1.5 14.0767 1.5 12C1.5 9.21523 2.60624 6.54451 4.57537 4.57538C6.54451 2.60625 9.21522 1.5 12 1.5ZM16.5 19.78V17.5C16.5 16.275 15.44 15.26 14.045 15.045C13.8647 15.0161 13.6825 15.0011 13.5 15H10.5C10.3174 15.0011 10.1352 15.0161 9.955 15.045C8.56 15.26 7.5 16.275 7.5 17.5V19.78C8.86565 20.5773 10.4186 20.9975 12 20.9975C13.5814 20.9975 15.1343 20.5773 16.5 19.78ZM6 18.685V17.25C6.0008 17.1823 6.01089 17.115 6.03 17.05C6.28 15.05 8.185 13.5 10.5 13.5H13.5C15.815 13.5 17.72 15.055 17.97 17.05C17.9891 17.115 17.9992 17.1823 18 17.25V18.69C19.3586 17.4748 20.3162 15.8758 20.7461 14.1045C21.176 12.3332 21.0579 10.4731 20.4075 8.7704C19.7572 7.06766 18.6051 5.60253 17.1038 4.56888C15.6025 3.53524 13.8227 2.9818 12 2.9818C10.1773 2.9818 8.3975 3.53524 6.8962 4.56888C5.3949 5.60253 4.24283 7.06766 3.59245 8.7704C2.94206 10.4731 2.824 12.3332 3.25391 14.1045C3.68382 15.8758 4.64142 17.4748 6 18.69V18.685Z" fill="white"/>
+                    </svg>
+                    <span>
+                        Jelte
+                    </span>
+                </a>
+            </nav>
         </div>
-        <nav>
-
-            <a href="login.php">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M16.1111 3C19.6333 3 22 6.3525 22 9.48C22 15.8138 12.1778 21 12 21C11.8222 21 2 15.8138 2 9.48C2 6.3525 4.36667 3 7.88889 3C9.91111 3 11.2333 4.02375 12 4.92375C12.7667 4.02375 14.0889 3 16.1111 3Z" fill="#F03C30" stroke="#F03C30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-            <a href="login.php">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 4.5C12.7911 4.5 13.5645 4.7346 14.2223 5.17412C14.8801 5.61365 15.3928 6.23836 15.6955 6.96927C15.9983 7.70017 16.0775 8.50444 15.9231 9.28036C15.7688 10.0563 15.3878 10.769 14.8284 11.3284C14.269 11.8878 13.5563 12.2688 12.7804 12.4231C12.0044 12.5775 11.2002 12.4983 10.4693 12.1955C9.73836 11.8928 9.11365 11.3801 8.67412 10.7223C8.23459 10.0645 8 9.29113 8 8.5C8 7.43913 8.42142 6.42172 9.17157 5.67157C9.92172 4.92143 10.9391 4.5 12 4.5ZM12 11C12.4945 11 12.9778 10.8534 13.3889 10.5787C13.8 10.304 14.1205 9.91352 14.3097 9.45671C14.4989 8.99989 14.5484 8.49723 14.452 8.01227C14.3555 7.52732 14.1174 7.08186 13.7678 6.73223C13.4181 6.3826 12.9727 6.1445 12.4877 6.04804C12.0028 5.95157 11.5001 6.00108 11.0433 6.1903C10.5865 6.37952 10.196 6.69995 9.92132 7.11107C9.64662 7.5222 9.5 8.00555 9.5 8.5C9.5 9.16304 9.76339 9.79893 10.2322 10.2678C10.7011 10.7366 11.337 11 12 11Z" fill="white"/>
-                    <path d="M12 1.5C14.0767 1.5 16.1068 2.11581 17.8335 3.26957C19.5602 4.42332 20.906 6.0632 21.7007 7.98182C22.4955 9.90045 22.7034 12.0116 22.2982 14.0484C21.8931 16.0852 20.8931 17.9562 19.4246 19.4246C17.9562 20.8931 16.0852 21.8931 14.0484 22.2982C12.0116 22.7034 9.90044 22.4955 7.98182 21.7007C6.0632 20.906 4.42332 19.5602 3.26957 17.8335C2.11581 16.1068 1.5 14.0767 1.5 12C1.5 9.21523 2.60624 6.54451 4.57537 4.57538C6.54451 2.60625 9.21522 1.5 12 1.5ZM16.5 19.78V17.5C16.5 16.275 15.44 15.26 14.045 15.045C13.8647 15.0161 13.6825 15.0011 13.5 15H10.5C10.3174 15.0011 10.1352 15.0161 9.955 15.045C8.56 15.26 7.5 16.275 7.5 17.5V19.78C8.86565 20.5773 10.4186 20.9975 12 20.9975C13.5814 20.9975 15.1343 20.5773 16.5 19.78ZM6 18.685V17.25C6.0008 17.1823 6.01089 17.115 6.03 17.05C6.28 15.05 8.185 13.5 10.5 13.5H13.5C15.815 13.5 17.72 15.055 17.97 17.05C17.9891 17.115 17.9992 17.1823 18 17.25V18.69C19.3586 17.4748 20.3162 15.8758 20.7461 14.1045C21.176 12.3332 21.0579 10.4731 20.4075 8.7704C19.7572 7.06766 18.6051 5.60253 17.1038 4.56888C15.6025 3.53524 13.8227 2.9818 12 2.9818C10.1773 2.9818 8.3975 3.53524 6.8962 4.56888C5.3949 5.60253 4.24283 7.06766 3.59245 8.7704C2.94206 10.4731 2.824 12.3332 3.25391 14.1045C3.68382 15.8758 4.64142 17.4748 6 18.69V18.685Z" fill="white"/>
-                </svg>
-            </a>
-        </nav>
+        
     </header>
     <main>
         <!-- banner img -->
         <div class="banner">
-            <img src="./assets/banner.jpeg" alt="banner">
+            <!-- <img src="./assets/banner.jpeg" alt="banner" class="main-banner"> -->
             <div class="banner-text">
                 <h2>Winkelstraat 65B</h2>
                 <p>€ 500.000 k.k.</p>
             </div>
         </div>
-        <!-- top part -->
-        <div class="top">
-            <h1>Favourieten</h1>
-            <span>(2)</span>
-        </div>
-        <div class="underline"></div>
+        <!-- breadcrumb -->
+        <div class="breadcrumb">
+            <div class="breadcrumb-list">
+                <a href="#">Home</a>
+                <span>></span>
+                <a href="#">Bewaarde huizen</a>
+            </div>
+            
 
+            <a href="" class="settings-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 10.8333C10.4603 10.8333 10.8334 10.4602 10.8334 9.99992C10.8334 9.53968 10.4603 9.16658 10 9.16658C9.53978 9.16658 9.16669 9.53968 9.16669 9.99992C9.16669 10.4602 9.53978 10.8333 10 10.8333Z" fill="#424242"/>
+                    <path d="M10 4.99992C10.4603 4.99992 10.8334 4.62682 10.8334 4.16659C10.8334 3.70635 10.4603 3.33325 10 3.33325C9.53978 3.33325 9.16669 3.70635 9.16669 4.16659C9.16669 4.62682 9.53978 4.99992 10 4.99992Z" fill="#424242"/>
+                    <path d="M10 16.6666C10.4603 16.6666 10.8334 16.2935 10.8334 15.8333C10.8334 15.373 10.4603 14.9999 10 14.9999C9.53978 14.9999 9.16669 15.373 9.16669 15.8333C9.16669 16.2935 9.53978 16.6666 10 16.6666Z" fill="#424242"/>
+                    <path d="M10 10.8333C10.4603 10.8333 10.8334 10.4602 10.8334 9.99992C10.8334 9.53968 10.4603 9.16658 10 9.16658C9.53978 9.16658 9.16669 9.53968 9.16669 9.99992C9.16669 10.4602 9.53978 10.8333 10 10.8333Z" stroke="#424242" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 4.99992C10.4603 4.99992 10.8334 4.62682 10.8334 4.16659C10.8334 3.70635 10.4603 3.33325 10 3.33325C9.53978 3.33325 9.16669 3.70635 9.16669 4.16659C9.16669 4.62682 9.53978 4.99992 10 4.99992Z" stroke="#424242" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 16.6666C10.4603 16.6666 10.8334 16.2935 10.8334 15.8333C10.8334 15.373 10.4603 14.9999 10 14.9999C9.53978 14.9999 9.16669 15.373 9.16669 15.8333C9.16669 16.2935 9.53978 16.6666 10 16.6666Z" stroke="#424242" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            
+        </div>
+
+        <!-- Filter list Filteren on left Lijst delen on right, both buttons -->
+
+        <div class="sort-buttons">
+            <button class="filteren">Filteren
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path d="M17.83 9.48472C17.6894 9.34427 17.4988 9.26538 17.3 9.26538C17.1013 9.26538 16.9106 9.34427 16.77 9.48472L12 14.2547L7.23001 9.48472C7.08613 9.34416 6.89231 9.26651 6.69117 9.26885C6.49004 9.27119 6.29808 9.35334 6.15751 9.49722C6.01695 9.6411 5.9393 9.83493 5.94164 10.0361C5.94399 10.2372 6.02613 10.4292 6.17001 10.5697L11.455 15.8347C11.5971 15.9743 11.7883 16.0525 11.9875 16.0525C12.1867 16.0525 12.3779 15.9743 12.52 15.8347L17.83 10.5697C17.9034 10.4997 17.9618 10.4155 18.0017 10.3223C18.0416 10.229 18.0621 10.1286 18.0621 10.0272C18.0621 9.9258 18.0416 9.82543 18.0017 9.73218C17.9618 9.63894 17.9034 9.55475 17.83 9.48472Z" fill="#006199"/>
+                    </svg>
+            </button>
+            <button class="lijst-delen">Lijst delen
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M13.8609 8.40489C14.0237 8.26539 14.105 8.19564 14.1348 8.11264C14.161 8.03979 14.161 7.96011 14.1348 7.88726C14.105 7.80426 14.0237 7.73451 13.8609 7.59501L8.21375 2.7546C7.9336 2.51447 7.79353 2.3944 7.67493 2.39146C7.57186 2.3889 7.47341 2.43418 7.40828 2.5141C7.33333 2.60606 7.33333 2.79055 7.33333 3.15953V6.02304C5.91021 6.27201 4.60773 6.99312 3.63981 8.07586C2.58455 9.25629 2.00082 10.7839 2 12.3673V12.7753C2.69956 11.9325 3.573 11.251 4.56051 10.7772C5.43113 10.3596 6.37228 10.1122 7.33333 10.047V12.8404C7.33333 13.2093 7.33333 13.3938 7.40828 13.4858C7.47341 13.5657 7.57186 13.611 7.67493 13.6084C7.79353 13.6055 7.9336 13.4854 8.21375 13.2453L13.8609 8.40489Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
         <div class="content">
-            <div class="left">
-                <h3>Filter</h3>
-                <div class="filter-underline"></div>
-                <div class="sharedwith">
-                    <a href="deleteuser()">
-                        <img src="./assets/sharedwith.png" alt="sharedwith">
-                    </a>
-                    <a href="deleteuser()">
-                        <img src="./assets/sharedwith.png" alt="sharedwith">
-                    </a>
-                </div>
-                <div class="price">
-                    <h4>Prijs</h4>
-                    <div class="price-input">
-                        <input type="text" placeholder="€ 0" class="price-input">
-                        <span>tot</span>
-                        <input type="text" placeholder="€ 400.000" class="price-input">
+           
+            
+            <div class="grid-content">
+                <div class="item">
+                    <img class="banner-img" src="./assets/house1.jpg" alt="house2">
+                    <div class="item-content">
+                        <div class="addedby">
+                            <img src="./assets/person.jpg" alt="addedby">
+                        </div>
+                        <h2>Bloemfonteinstraat 8 F</h2>
+                        <p class="postal-adress">9693 EJ Bad Nieuweschans</p>
+                        <p class="price">€ 400.000 k.k.</p>
+                        <p class="date">2 uur geleden</p>
                     </div>
-                    <div class="price-underline"></div>
-
                 </div>
 
-                <div class="addedafter">
-                    <!-- checkbox list -->
-                    <h4>Toegevoegd na</h4>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="addedafter" id="addedafter1">
-                            <label for="addedafter1">Laat alles zien</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="addedafter" id="addedafter2">
-                            <label for="addedafter2">Afgelopen 24 uur</label>
-                        </li>
-                    </ul>
+                <div class="item">
+                    <img class="banner-img" src="./assets/house2.jpg" alt="house2">
+                    <div class="item-content">
+                        <div class="addedby">
+                            <img src="./assets/person.jpg" alt="addedby">
+                        </div>
+                        <h2>Winkelstraat 65B</h2>
+                        <p class="postal-adress">6716 AB Gouda</p>
+                        <p class="price">€ 500.000 k.k.</p>
+                        <p class="date">5 uur geleden</p>
+                    </div>
                 </div>
+
+                
+
+                
 
             </div>
-            <div class="right">
-                <div class="banner">
-                    <div class="div addedby">
-                        <img src="./assets/addedby.png" alt="addedby">
-                    </div>
-
-                    <img src="./assets/house1.jpg" alt="house2">
-
-                    <a href="">
-                        <img src="./assets/exit.png" alt="delete">
-                    </a>
-                    <h2>Bloemfonteinstraat 8 F</h2>
-                    <p class="price">€ 400.000 k.k.</p>
-                </div>
-                <ul>
-                    <li>
-                        <div class="img">
-                            <div class="div addedby">
-                                <img src="./assets/addedby.png" alt="addedby">
-                            </div>
-    
-                            <img src="./assets/house2.jpg" alt="house2">
-    
-                            <a href="">
-                                <img src="./assets/exit.png" alt="delete">
-                            </a>
-                        </div>
-                        <div class="info">
-                            <h2>Bloemfonteinstraat 8 F</h2>
-                            <h3>3072 HG Rotterdam</h3>
-                            <p class="price">€ 400.000 k.k.</p>
-                            <p class="time">2 uur geleden</p>
-                            <a href="">Bekijk woning</a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="img">
-                            <div class="div addedby">
-                                <img src="./assets/addedby.png" alt="addedby">
-                            </div>
-    
-                            <img src="./assets/house2.jpg" alt="house2">
-    
-                            <a href="">
-                                <img src="./assets/exit.png" alt="delete">
-                            </a>
-                        </div>
-                        <div class="info">
-                            <h2>Bloemfonteinstraat 8 F</h2>
-                            <h3>3072 HG Rotterdam</h3>
-                            <p class="price">€ 400.000 k.k.</p>
-                            <p class="time">2 uur geleden</p>
-                            <a href="">Bekijk woning</a>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="img">
-                            <div class="div addedby">
-                                <img src="./assets/addedby.png" alt="addedby">
-                            </div>
-    
-                            <img src="./assets/house2.jpg" alt="house2">
-    
-                            <a href="">
-                                <img src="./assets/exit.png" alt="delete">
-                            </a>
-                        </div>
-                        <div class="info">
-                            <h2>Bloemfonteinstraat 8 F</h2>
-                            <h3>3072 HG Rotterdam</h3>
-                            <p class="price">€ 400.000 k.k.</p>
-                            <p class="time">2 uur geleden</p>
-                            <a href="">Bekijk woning</a>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-            
-
-
-
-
-
-            
-
         </div>
-
-
-
-        
     </main>
-    
 </body>
 <script src="https://kit.fontawesome.com/b1b2df5e00.js" crossorigin="anonymous"></script>
 </html>

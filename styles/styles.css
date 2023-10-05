@@ -6,33 +6,50 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
-    background-color: #fff;
+    /* background-color: #fff; */
+
+    /* add gradient #E6F2F7 */
+    /* background: rgb(255,255,255); */
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(230,242,247,1) 100%);
 
 }
 
 header {
-    position: fixed;
-    /* height: 60px; */
+
     width: 100%;
     background-color: #F7A100;
-    /* padding: 0 2rem; */
-    /* max-width: 1200px; */
+    padding: 0 12px;
+    
+}
+
+.header-container{
+    
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 12px;
-    
+    max-width: 64.5rem;
 }
 header div, header nav {
     display: flex;
     align-items: center;
 }
 
+header nav span {
+    display: none;
+    font-size: 16px;
+    padding-left: 10px;
+    font-family: "Inter", sans-serif;
+}
 header button {
     border: none;
     background-color: transparent;
@@ -64,21 +81,282 @@ header a:hover {
 }
 
 
+
+
+main {
+    margin: 0 auto;
+    max-width: 64.5rem;
+    
+}
 main .banner {
-    /* position: relative; */
-    width: 100%;
-    height: 100%;
+    position: relative;
+    display: block;
+    background-color: #ccc;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 100%), url(../assets/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    /* margin-bottom: 20px; */
+
 }
 
-main .banner img {
+main .banner img.main-banner {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    max-height: 208px;
+    max-height: 200px;
 }
 
 
 main .banner-text {
-    /* position: absolute; */
+    display: block;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+main .banner-text h2 {
+    font-size: 28px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+
+main .banner-text p {
+    font-size: 20px;
+    color: #F7A100;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+ 
+
+
+
+/* BreadCrumb */
+.breadcrumb {
+    gap: 10px;
+    position: relative;
+    padding: 0 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.breadcrumb a, .breadcrumb span {
+    text-decoration: none;
+    font-size: 14px;
+    color: #424242;
+    font-family: "Inter", sans-serif;
+}
+
+.breadcrumb span {
+    color: #ccc;
+}
+
+/* first a in breadcrumb */
+.breadcrumb a:first-child {
+    font-weight: 600;
+    color: #0071B3;
+}
+
+.breadcrumb .settings-button {
+    display: flex;
+    
+}
+
+
+
+
+/* Filter buttons */
+.sort-buttons {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sort-buttons button {
+    height: 43px;
+    padding: 0 12px;
+    border: none;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.sort-buttons button svg {
+    font-size: 16px;
+}
+.sort-buttons button.filteren svg {
+    position: absolute;
+    right: 12px;
+}
+
+.sort-buttons button.filteren {
+    position: relative;
+    color: #333;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.1) inset;
+    min-width: 120px;
+    width: 100%;
+    max-width: 250px;
+    color: #333;
+}
+
+.sort-buttons button.lijst-delen {
+    min-width: 127px;
+    background-color: #F7A100;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort-buttons button.lijst-delen svg {
+    margin-left: 4px;
+}
+
+/* grid layout */
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.item .item-content {
+    position: relative;
+    padding: 0 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.item .item-content .addedby {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+}
+
+.item .item-content .addedby img {
+    width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+}
+
+.item img.banner-img {
+    width: 100%;
+    min-height: 195px;
+    object-fit: cover;
+    max-height: 195px;
+    object-position: center;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.item .item-content h2 {
+    color: #0071B3;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+
+}
+
+.item .item-content p.postal-adress {
+    color: #999;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.item .item-content p.price {
+    color: #333;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.item .item-content p.date {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    color: #999;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+.item {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* media query 465px*/
+
+
+@media (min-width: 540px) {
+    .grid-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .grid-content .item {
+        display: flex;
+    }
+    .item img.banner-img {
+        width: 300px;
+        min-height: 195px;
+        object-fit: cover;
+        object-position: center;
+        padding-left: 10px;
+    }
+
+    .item .item-content {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .breadcrumb, .sort-buttons, .content {
+        margin: 0;
+    }   
+
+    header nav span {
+        display: block;
+    }
+
+  
 }
 
