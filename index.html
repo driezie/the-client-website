@@ -6,32 +6,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funda</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    
 </head>
 <body>
     <header>
+        <div>
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <img src="./assets/logo.png" alt="funda logo" class="logo">
+            
+        </div>
         <nav>
-            <div class="left">
-                <img src="./assets/funda.png" alt="logo">
-                <a href="index.php">Kopen</a>
-                <a href="about.php">Huren</a>
-                <a href="contact.php">Verkopen</a>
-            </div>
-            <div class="right">
-                <a href="login.php">Mijn huis</a>
-                <a href="register.php">Jelte</a>
-            </div>
+
+            <a href="login.php">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16.1111 3C19.6333 3 22 6.3525 22 9.48C22 15.8138 12.1778 21 12 21C11.8222 21 2 15.8138 2 9.48C2 6.3525 4.36667 3 7.88889 3C9.91111 3 11.2333 4.02375 12 4.92375C12.7667 4.02375 14.0889 3 16.1111 3Z" fill="#F03C30" stroke="#F03C30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="login.php">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 4.5C12.7911 4.5 13.5645 4.7346 14.2223 5.17412C14.8801 5.61365 15.3928 6.23836 15.6955 6.96927C15.9983 7.70017 16.0775 8.50444 15.9231 9.28036C15.7688 10.0563 15.3878 10.769 14.8284 11.3284C14.269 11.8878 13.5563 12.2688 12.7804 12.4231C12.0044 12.5775 11.2002 12.4983 10.4693 12.1955C9.73836 11.8928 9.11365 11.3801 8.67412 10.7223C8.23459 10.0645 8 9.29113 8 8.5C8 7.43913 8.42142 6.42172 9.17157 5.67157C9.92172 4.92143 10.9391 4.5 12 4.5ZM12 11C12.4945 11 12.9778 10.8534 13.3889 10.5787C13.8 10.304 14.1205 9.91352 14.3097 9.45671C14.4989 8.99989 14.5484 8.49723 14.452 8.01227C14.3555 7.52732 14.1174 7.08186 13.7678 6.73223C13.4181 6.3826 12.9727 6.1445 12.4877 6.04804C12.0028 5.95157 11.5001 6.00108 11.0433 6.1903C10.5865 6.37952 10.196 6.69995 9.92132 7.11107C9.64662 7.5222 9.5 8.00555 9.5 8.5C9.5 9.16304 9.76339 9.79893 10.2322 10.2678C10.7011 10.7366 11.337 11 12 11Z" fill="white"/>
+                    <path d="M12 1.5C14.0767 1.5 16.1068 2.11581 17.8335 3.26957C19.5602 4.42332 20.906 6.0632 21.7007 7.98182C22.4955 9.90045 22.7034 12.0116 22.2982 14.0484C21.8931 16.0852 20.8931 17.9562 19.4246 19.4246C17.9562 20.8931 16.0852 21.8931 14.0484 22.2982C12.0116 22.7034 9.90044 22.4955 7.98182 21.7007C6.0632 20.906 4.42332 19.5602 3.26957 17.8335C2.11581 16.1068 1.5 14.0767 1.5 12C1.5 9.21523 2.60624 6.54451 4.57537 4.57538C6.54451 2.60625 9.21522 1.5 12 1.5ZM16.5 19.78V17.5C16.5 16.275 15.44 15.26 14.045 15.045C13.8647 15.0161 13.6825 15.0011 13.5 15H10.5C10.3174 15.0011 10.1352 15.0161 9.955 15.045C8.56 15.26 7.5 16.275 7.5 17.5V19.78C8.86565 20.5773 10.4186 20.9975 12 20.9975C13.5814 20.9975 15.1343 20.5773 16.5 19.78ZM6 18.685V17.25C6.0008 17.1823 6.01089 17.115 6.03 17.05C6.28 15.05 8.185 13.5 10.5 13.5H13.5C15.815 13.5 17.72 15.055 17.97 17.05C17.9891 17.115 17.9992 17.1823 18 17.25V18.69C19.3586 17.4748 20.3162 15.8758 20.7461 14.1045C21.176 12.3332 21.0579 10.4731 20.4075 8.7704C19.7572 7.06766 18.6051 5.60253 17.1038 4.56888C15.6025 3.53524 13.8227 2.9818 12 2.9818C10.1773 2.9818 8.3975 3.53524 6.8962 4.56888C5.3949 5.60253 4.24283 7.06766 3.59245 8.7704C2.94206 10.4731 2.824 12.3332 3.25391 14.1045C3.68382 15.8758 4.64142 17.4748 6 18.69V18.685Z" fill="white"/>
+                </svg>
+            </a>
         </nav>
     </header>
     <main>
+        <!-- banner img -->
+        <div class="banner">
+            <img src="./assets/banner.jpeg" alt="banner">
+            <div class="banner-text">
+                <h2>Winkelstraat 65B</h2>
+                <p>€ 500.000 k.k.</p>
+            </div>
+        </div>
         <!-- top part -->
         <div class="top">
-                <h1>Favourieten</h1>
-                <span>(2)</span>
+            <h1>Favourieten</h1>
+            <span>(2)</span>
         </div>
         <div class="underline"></div>
+
+        <div class="content">
+            <div class="left">
+                <h3>Filter</h3>
+                <div class="filter-underline"></div>
+                <div class="sharedwith">
+                    <a href="deleteuser()">
+                        <img src="./assets/sharedwith.png" alt="sharedwith">
+                    </a>
+                    <a href="deleteuser()">
+                        <img src="./assets/sharedwith.png" alt="sharedwith">
+                    </a>
+                </div>
+                <div class="price">
+                    <h4>Prijs</h4>
+                    <div class="price-input">
+                        <input type="text" placeholder="€ 0" class="price-input">
+                        <span>tot</span>
+                        <input type="text" placeholder="€ 400.000" class="price-input">
+                    </div>
+                    <div class="price-underline"></div>
+
+                </div>
+
+                <div class="addedafter">
+                    <!-- checkbox list -->
+                    <h4>Toegevoegd na</h4>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="addedafter" id="addedafter1">
+                            <label for="addedafter1">Laat alles zien</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="addedafter" id="addedafter2">
+                            <label for="addedafter2">Afgelopen 24 uur</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="banner">
+                    <div class="div addedby">
+                        <img src="./assets/addedby.png" alt="addedby">
+                    </div>
+
+                    <img src="./assets/house1.jpg" alt="house2">
+
+                    <a href="">
+                        <img src="./assets/exit.png" alt="delete">
+                    </a>
+                    <h2>Bloemfonteinstraat 8 F</h2>
+                    <p class="price">€ 400.000 k.k.</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="img">
+                            <div class="div addedby">
+                                <img src="./assets/addedby.png" alt="addedby">
+                            </div>
+    
+                            <img src="./assets/house2.jpg" alt="house2">
+    
+                            <a href="">
+                                <img src="./assets/exit.png" alt="delete">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>Bloemfonteinstraat 8 F</h2>
+                            <h3>3072 HG Rotterdam</h3>
+                            <p class="price">€ 400.000 k.k.</p>
+                            <p class="time">2 uur geleden</p>
+                            <a href="">Bekijk woning</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img">
+                            <div class="div addedby">
+                                <img src="./assets/addedby.png" alt="addedby">
+                            </div>
+    
+                            <img src="./assets/house2.jpg" alt="house2">
+    
+                            <a href="">
+                                <img src="./assets/exit.png" alt="delete">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>Bloemfonteinstraat 8 F</h2>
+                            <h3>3072 HG Rotterdam</h3>
+                            <p class="price">€ 400.000 k.k.</p>
+                            <p class="time">2 uur geleden</p>
+                            <a href="">Bekijk woning</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="img">
+                            <div class="div addedby">
+                                <img src="./assets/addedby.png" alt="addedby">
+                            </div>
+    
+                            <img src="./assets/house2.jpg" alt="house2">
+    
+                            <a href="">
+                                <img src="./assets/exit.png" alt="delete">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>Bloemfonteinstraat 8 F</h2>
+                            <h3>3072 HG Rotterdam</h3>
+                            <p class="price">€ 400.000 k.k.</p>
+                            <p class="time">2 uur geleden</p>
+                            <a href="">Bekijk woning</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            
+
+
+
+
+
+            
+
+        </div>
+
+
 
         
     </main>
     
 </body>
+<script src="https://kit.fontawesome.com/b1b2df5e00.js" crossorigin="anonymous"></script>
 </html>
