@@ -16,29 +16,22 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
-    /* background-color: #fff; */
-
-    /* add gradient #E6F2F7 */
-    /* background: rgb(255,255,255); */
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(230,242,247,1) 100%);
-
 }
 
 header {
-
     width: 100%;
     background-color: #F7A100;
     padding: 0 12px;
-    
 }
 
 .header-container{
-    
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     max-width: 64.5rem;
 }
+
 header div, header nav {
     display: flex;
     align-items: center;
@@ -54,15 +47,17 @@ header nav span {
     padding-left: 10px;
     font-family: "Inter", sans-serif;
 }
-header button {
+
+header .menu-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
     color: white;
-    padding: 0 12px;
+    padding: 1rem;
+    margin-right: 10px;
 }
 
-header button i {
+header .menu-button i {
     font-size: 18px;
 }
 
@@ -86,14 +81,11 @@ header a:hover {
     background-color: #de9000;;
 }
 
-
-
-
 main {
     margin: 0 auto;
     max-width: 64.5rem;
-    
 }
+
 main .banner {
     position: relative;
     display: block;
@@ -103,8 +95,6 @@ main .banner {
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
-    /* margin-bottom: 20px; */
-
 }
 
 main .banner .share-button {
@@ -126,7 +116,6 @@ main .banner img.main-banner {
     max-height: 200px;
 }
 
-
 main .banner-text {
     display: block;
     bottom: 20px;
@@ -143,7 +132,6 @@ main .banner-text h2 {
     margin-bottom: 8px;
 }
 
-
 main .banner-text p {
     font-size: 20px;
     color: #F7A100;
@@ -153,10 +141,6 @@ main .banner-text p {
     line-height: 24px;
 }
 
- 
-
-
-
 /* BreadCrumb */
 .breadcrumb {
     gap: 10px;
@@ -164,12 +148,10 @@ main .banner-text p {
     padding: 0 10px;
     padding-top: 14px;
     padding-bottom: 14px;
-    
     border-bottom: 1px solid #ccc;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .breadcrumb a, .breadcrumb span {
@@ -193,9 +175,6 @@ main .banner-text p {
     display: flex;
     
 }
-
-
-
 
 /* Filter buttons */
 .sort-buttons {
@@ -286,6 +265,7 @@ main .banner-text p {
     width: 30px;
     max-height: 30px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .item img.banner-img {
@@ -335,8 +315,6 @@ main .banner-text p {
     line-height: 24px;
 }
 
-
-
 .item {
     border-bottom: 1px solid #ccc;
 }
@@ -370,7 +348,6 @@ main .banner-text p {
     background: #de9000;
 }
 
-
 footer {
     background-color: #EDEDED;
 }
@@ -403,6 +380,7 @@ footer .footer-grid .footer-item ul {
 footer .footer-grid .footer-item ul li {
     padding: 0.3rem 0;
 }
+
 footer .footer-grid .footer-item ul li a {
     text-decoration: none;
     color: #0071b3;
@@ -419,9 +397,7 @@ footer .footer-grid .footer-item ul li a:hover {
 @media (min-width: 540px) {
     .grid-content {
         grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-
-        
+        gap: 10px; 
     }
 
     .grid-content .item {
@@ -450,19 +426,16 @@ footer .footer-grid .footer-item ul li a:hover {
         margin: 0;
     }   
 
-    .header-container button {
+    .menu-button {
         display: none;
     }
 
     header .menu a {
         display: block;
     }
-
-    
 }
 
 @media (min-width: 940px) {
-    
     header nav span {
         display: block;
     }
