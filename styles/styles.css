@@ -1,5 +1,4 @@
 /* defaults */
-
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +21,7 @@ body {
 header {
     width: 100%;
     background-color: #F7A100;
-    padding: 0 12px;
+    padding: 0;
 }
 
 .header-container{
@@ -37,7 +36,13 @@ header div, header nav {
     align-items: center;
 }
 
-header .menu a {
+header .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header .menu .list-item {
     display: none;
 }
 
@@ -54,19 +59,23 @@ header .menu-button {
     cursor: pointer;
     color: white;
     padding: 1rem;
-    margin-right: 10px;
 }
 
-header .menu-button i {
+header .menu-button svg {
+    margin-right: 10px;
     font-size: 18px;
+}
+
+header .logo-item{
+    display: flex;
 }
 
 header .logo {
     max-height: 30px;
-    padding-right: 10px;
+    padding: 0 10px;
 }
 
-header a {
+header a, header button {
     text-decoration: none;
     color: white;
     padding: 1rem;
@@ -77,7 +86,7 @@ header a {
     font-family: "Inter", sans-serif;
 }
 
-header a:hover {
+header a:hover, header button:hover {
     background-color: #de9000;;
 }
 
@@ -94,7 +103,7 @@ main .banner {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 300px;
 }
 
 main .banner .share-button {
@@ -165,15 +174,14 @@ main .banner-text p {
     color: #ccc;
 }
 
-/* first a in breadcrumb */
 .breadcrumb a:first-child {
     font-weight: 600;
     color: #0071B3;
 }
 
+/* Zorgt dat settings in midden komt van de div */
 .breadcrumb .settings-button {
-    display: flex;
-    
+    display: flex; 
 }
 
 /* Filter buttons */
@@ -205,6 +213,7 @@ main .banner-text p {
 .sort-buttons button svg {
     font-size: 16px;
 }
+
 .sort-buttons button.filteren svg {
     position: absolute;
     right: 12px;
@@ -394,6 +403,72 @@ footer .footer-grid .footer-item ul li a:hover {
     color: #333;
 }
 
+.menu-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 100;
+}
+.dropdown-overlay {
+    border-bottom: 1px solid #ccc;
+}
+
+
+.dropdown-overlay:last-of-type {
+    border-bottom: none;
+}
+
+.dropdown-button {
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    color: #333;
+    background: none;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-button svg {
+    position: absolute;
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    color: #0071b3;
+    background: none;
+    text-align: left;
+    
+    font-family: 'Inter';
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropdown-button svg.rotate {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
 @media (min-width: 540px) {
     .grid-content {
         grid-template-columns: repeat(1, 1fr);
@@ -426,12 +501,16 @@ footer .footer-grid .footer-item ul li a:hover {
         margin: 0;
     }   
 
-    .menu-button {
+    .menu-item{
         display: none;
     }
 
-    header .menu a {
+    header .menu .list-item {
         display: block;
+    }
+
+    header {
+        padding:0 12px;
     }
 }
 
