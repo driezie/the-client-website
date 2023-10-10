@@ -25,7 +25,8 @@ De technieken die gebruikt zijn voor het maken van de website zijn HTML en CSS e
 Ik heb vooral de bestaande Funda site als bron gebruikt, hier kon ik veel van overnemen zoals logo, kleuren etc. Ook kon ik hieruit makkelijk opmaken wat belangrijke informatie voor op de site is.
 
 ## Licentie
-GNU GPL V3
+![image](https://github.com/driezie/the-client-website/assets/80174866/ba97e0ae-c857-4de6-a0c0-c35b7361275f)
+
 
 This work is licensed under [GNU GPLv3](https://github.com/driezie/the-client-case/blob/main/LICENSE).
 
