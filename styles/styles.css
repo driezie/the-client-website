@@ -193,6 +193,7 @@ main .banner-text p {
     padding: 0 10px;
     padding-top: 14px;
     padding-bottom: 14px;
+    border-bottom: none;
     border-bottom: 1px solid #ccc;
 }
 
@@ -239,14 +240,37 @@ main .banner-text p {
     justify-content: center;
 }
 
-
 .sort-buttons button.lijst-delen:hover {
     background-color: #de9000;
 }
 
-
 .sort-buttons button.lijst-delen svg {
     margin-left: 4px;
+}
+
+.sharedwith {
+    gap: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sharedwith a, .sharedwith .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sharedwith .list {
+    display: none;
+    gap: 10px;
+}
+
+.sharedwith img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* grid layout */
@@ -256,6 +280,11 @@ main .banner-text p {
     gap: 0px;
     transition: all 0.3s ease-in-out;
 }
+
+.item{
+    text-decoration: none;
+}
+
 .item .item-content {
     position: relative;
     padding: 0 10px;
@@ -266,24 +295,24 @@ main .banner-text p {
 
 .item .item-content .addedby {
     position: absolute;
-    right: 14px;
-    top: 14px;
+    right: 10px;
+    top: 13px;
 }
 
 .item .item-content .addedby img {
-    width: 30px;
-    max-height: 30px;
+    width: 40px;
+    max-height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .item img.banner-img {
     width: 100%;
-    min-height: 195px;
+    min-height: 220px;
     object-fit: cover;
     max-height: 195px;
     object-position: center;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -293,7 +322,6 @@ main .banner-text p {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     line-height: 24px;
-
 }
 
 .item .item-content p.postal-adress {
@@ -413,7 +441,6 @@ footer .footer-grid .footer-item ul li a:hover {
     border-bottom: 1px solid #ccc;
 }
 
-
 .dropdown-overlay:last-of-type {
     border-bottom: none;
 }
@@ -480,7 +507,7 @@ footer .footer-grid .footer-item ul li a:hover {
     }
     .item img.banner-img {
         width: 300px;
-        min-height: 195px;
+        min-height: 220px;
         object-fit: cover;
         object-position: center;
         padding-left: 10px;
@@ -511,6 +538,12 @@ footer .footer-grid .footer-item ul li a:hover {
 
     header {
         padding:0 12px;
+    }
+}
+
+@media (min-width: 700px) {
+    .sharedwith .list {
+        display: flex;
     }
 }
 
