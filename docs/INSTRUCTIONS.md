@@ -1,4 +1,4 @@
-# The Client Case
+# The Client - Website
 
 Ontwerp en maak een component / website voor een bedrijf en presenteer het resultaat.
 
