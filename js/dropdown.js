@@ -39,6 +39,8 @@ dropdownButtons.forEach((button) => {
     });
 });
 
+
+// resets the dropdown als je opnieuw menu opend
 const menuOverlay = document.querySelector('#menu-overlay');
 function Togglemenu() {
     menuOverlay.classList.toggle('hidden'); 
