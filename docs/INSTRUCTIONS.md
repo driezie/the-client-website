@@ -1,4 +1,4 @@
-# The Client Case
+# The Client - Website
 
 Ontwerp en maak een component / website voor een bedrijf en presenteer het resultaat.
 
@@ -35,8 +35,8 @@ De development lifecycle kent de volgende stappen:
 Focus sprint 2: The client - De focus van deze sprint ligt op het maken van een opdracht voor een opdrachtgever en het presenteren van het resultaat.
 
 Deze opdracht is done als:
-- [ ] Je hebt gewerkt volgens de verschillende fases van de development-lifecycle
-- [ ] Je hebt je werk gedocumenteerd in de Readme en Wiki (user story, ontwerpbeslissingen, schetsen en code voorbeelden)
-- [ ] de website staat op Github en heeft een live url
+- [x] Je hebt gewerkt volgens de verschillende fases van de development-lifecycle
+- [x] Je hebt je werk gedocumenteerd in de Readme en Wiki (user story, ontwerpbeslissingen, schetsen en code voorbeelden)
+- [x] de website staat op Github en heeft een live url
 
 
